@@ -43,7 +43,9 @@ class _PAGEState extends State<PAGE> {
             ),
             child: IconButton(
             icon: Icon(Icons.arrow_back), 
-            onPressed:(){},
+            onPressed:(){
+              Navigator.pop(context);
+            },
             color: Colors.grey,),
             
             ),

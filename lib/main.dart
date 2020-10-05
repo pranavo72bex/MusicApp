@@ -99,14 +99,24 @@ void initState(){
               color: Color(0xFF292D32),
               shape: BoxShape.circle
             ),
+          child: InkWell(
+            onTap:(){
+              Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context)=>PAGE(),
+                )
+                );
 
+            },
             child: ClipOval(
-           child: Image.asset(
+            child: Image.asset(
               "assets/pic.png",
                fit: BoxFit.cover,
+               
             ),
            )
-            
+          ),
+           
           ),
 
            Container(
@@ -181,14 +191,7 @@ void initState(){
             ),
             child: IconButton(
               icon: Icon(Icons.play_arrow), 
-              onPressed:(){
-                Navigator.push(
-                  context, 
-                  MaterialPageRoute(builder: (context)=>PAGE(),
-                  settings: RouteSettings(arguments:list[index])
-                )
-                );
-              },
+              onPressed:(){},
               color: Colors.grey,),
             )
 
