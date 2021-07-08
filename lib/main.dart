@@ -28,64 +28,44 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<Music> list = [
     Music(
-    
       title: "Air't No Time",
       albumb: "Future",
-     
     ),
     Music(
-    
       title: "For her",
       albumb: "Future",
-     
     ),
     Music(
-     
       title: "Low Life",
       albumb: "Future - The Weekend",
-     
     ),
     Music(
-     
       title: "Xanny Family",
       albumb: "Future",
-      
     ),
     Music(
-     
       title: "coldPlay",
       albumb: "on&on",
-     
     ),
     Music(
-    
       title: "Lil Haiti Baby",
       albumb: "Future",
-    
     ),
     Music(
-     
       title: "Photo",
       albumb: "Future",
-     
     ),
     Music(
-     
       title: "Photo",
       albumb: "Future",
-      
     ),
     Music(
-     
       title: "coldPlay",
       albumb: "on&on",
-     
     ),
     Music(
-     
       title: "coldPlay",
       albumb: "on&on",
-      
     ),
   ];
 
@@ -153,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           MaterialPageRoute(
                             builder: (context) => NowPlaying(
                               musicList: list,
+                              key: null,
                             ),
                           ));
                     },

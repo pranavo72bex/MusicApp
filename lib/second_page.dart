@@ -4,7 +4,7 @@ import 'package:mediaPlayerApp/data.dart';
 class NowPlaying extends StatefulWidget {
   final List<Music> musicList;
 
-  const NowPlaying({Key key, @required this.musicList}) : super(key: key);
+  const NowPlaying({Key? key, required this.musicList}) : super(key: key);
   @override
   _NowPlayingState createState() => _NowPlayingState();
 }
@@ -13,9 +13,9 @@ class _NowPlayingState extends State<NowPlaying> {
   int sliderHeight = 180;
   int maxValue = 220;
   int minvalue = 120;
-  List<Music> musicList;
-  int currentPlayingIndex;
-  int listLength;
+  late List<Music> musicList;
+  late int currentPlayingIndex;
+  late int listLength;
 
   @override
   void initState() {
