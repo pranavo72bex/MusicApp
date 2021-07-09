@@ -3,7 +3,7 @@ class Music {
   final String albumb;
 
   Music({
-    this.title,
-    this.albumb,
+    required this.title,
+    required this.albumb,
   });
 }
